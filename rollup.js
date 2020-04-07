@@ -16,7 +16,6 @@ module.exports = ({
 
       const ast = recast.parse(code, {
         parser: require('recast/parsers/babel')
-        sourceFileName: id
       })
 
       astTypes.visit(ast, {
