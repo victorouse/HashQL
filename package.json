@@ -8,6 +8,7 @@
   "repository": "porsager/hashql",
   "license": "WTFPL",
   "dependencies": {
+    "@babel/parser": "^7.9.4",
     "acorn": "7.1.0",
     "acorn-jsx": "^5.2.0",
     "ast-types": "0.13.2",
