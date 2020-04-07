@@ -1,6 +1,10 @@
 const crypto = require('crypto')
     , recast = require('recast')
     , astTypes = require('ast-types')
+    , acorn = require('acorn')
+    , jsx = require('acorn-jsx')
+
+acorn.Parser.extend(jsx())
 
 module.exports = ({
   tags,
@@ -17,7 +21,7 @@ module.exports = ({
       const ast = recast.parse(code, {
         parser: {
           parse(source, opts) {
-            return require('acorn').parse(source, {
+            return acorn.parse(source, {
               ...opts,
               ecmaVersion: 2019,
               sourceType: 'module'

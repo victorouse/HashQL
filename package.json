@@ -9,6 +9,7 @@
   "license": "WTFPL",
   "dependencies": {
     "acorn": "7.1.0",
+    "acorn-jsx": "^5.2.0",
     "ast-types": "0.13.2",
     "recast": "0.18.5",
     "rollup": "1.27.10"
